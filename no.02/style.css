@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family:sans-serif;
+}
+.container{
+    width:100%; height:100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: linear-gradient(135deg, #153677,#4e085f);
+}
+.todo-app{
+  width:100%;
+  max-width:500px;
+  background-color: rgb(238, 236, 236);
+  margin:100px auto 20px;
+  padding: 30px 30px 70px;
+  border-radius:10px;
+}
+.todo-app h2{
+   display: flex;
+   color: #4e085f;
+   align-items: center;
+   margin-bottom:20px;
+}
+.todo-app h2 img{
+    width:30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(226, 226, 226);
+    border-radius:30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.row input{
+    width:70%;
+    font-size:15px;
+    padding: 15px; 
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.row button{
+    padding:15px 40px; 
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size:16px;
+    cursor: pointer;
+    border-radius:30px;
+    background-color:tomato;
+}
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width:26px; height:26px;
+    top:8px; left:8px;
+    border-radius: 50%;
+    background-image: url(unlockicon.png);
+    background-position: center;
+    background-size: cover;
+}
+ul li.chackd{
+   color:#8e8e8e; 
+   text-decoration: line-through;
+}
+ul li.chackd::before{
+background-image: url(cliclicon.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0; top: 8px;
+    font-size:22px;
+    width:25px; height:25px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border:1px solid transparent;
+    border-radius:50%;
+    transition: .1s linear;
+}
+ul li span:hover{
+    color: red;
+    border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
